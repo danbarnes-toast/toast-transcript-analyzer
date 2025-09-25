@@ -39,3 +39,11 @@ Your form is ready at: https://docs.google.com/spreadsheets/d/1hoY6J90BvuP04cLHF
 ## Google Sheet
 
 Your analysis results will appear in your existing sheet: https://docs.google.com/spreadsheets/d/1Bi0lHazi9JKI_AP-UzVZLReZ_AVztckMEGZAFW0hfPQ/edit
+
+## JSON Schema URL for Zapier
+
+Use this URL in your Zapier configuration:
+
+```
+https://raw.githubusercontent.com/danbarnes-toast/toast-transcript-analyzer/main/schema.json
+```
