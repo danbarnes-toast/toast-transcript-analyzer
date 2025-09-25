@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "rep_name": {
+      "type": "string",
+      "description": "Sales representative name"
+    },
+    "restaurant_name": {
+      "type": "string", 
+      "description": "Restaurant name from the call"
+    },
+    "overall_sentiment": {
+      "type": "string",
+      "enum": ["Positive", "Negative", "Neutral", "Mixed"],
+      "description": "Overall sentiment of the conversation"
+    },
+    "likes": {
+      "type": "string",
+      "description": "Concrete strengths, integrations, ease, value mentioned"
+    },
+    "hesitations": {
+      "type": "string",
+      "description": "Objections, risks, or concerns about moving forward"
+    },
+    "feature_requests": {
+      "type": "string",
+      "description": "Explicit or implied feature requests"
+    },
+    "competitive_mentions": {
+      "type": "string", 
+      "description": "Any competitor names mentioned"
+    },
+    "quotes": {
+      "type": "string",
+      "description": "Short snippets capturing key feedback in quotes"
+    },
+    "top_feedback_theme": {
+      "type": "string",
+      "description": "Primary feedback theme from the conversation"
+    }
+  },
+  "required": [
+    "rep_name",
+    "restaurant_name", 
+    "overall_sentiment",
+    "likes",
+    "hesitations",
+    "feature_requests",
+    "competitive_mentions",
+    "quotes",
+    "top_feedback_theme"
+  ],
+  "additionalProperties": false
+}
